@@ -15,8 +15,11 @@
                 document.write("&nbsp;")
             }
 
+
             for (let i = 0; i < n; i++) {
-                document.write("^");
+                document.write("$")
+                // document.write(prompt("Введіть символ"));
+
             }
             document.write("<br>");
         }
@@ -30,19 +33,25 @@
         //   }
 
         function drawFigure(params) {
-            drawStar(1, 5);
-            
+            drawStar(10, 2);
+            drawStar(10, 3);
+            drawStar(10, 4);
 
 
 
-            drawStar(3, 3);
-           
+            drawStar(10, 5);
+
+
+            drawStar(10, 4);
+
+
+            drawStar(10, 3);
+            drawStar(10, 2);
 
 
 
 
-            drawStar(4, 2);
-            drawStar(5, 1);
+
         }
 
         // document.write("<br>");

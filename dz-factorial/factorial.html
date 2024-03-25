@@ -10,12 +10,17 @@
 <body>
     <script>
 
-        let n = +prompt("Введіть факторіал")
+        // let n = +prompt("Введіть факторіал")
 
-        alert(n != 1 * 2 * 3 * n);
-        if (isNaN(n))
-            alert('Input error');
-
+        // alert(n != 1 * 2 * 3 * n);
+        // if (isNaN(n))
+        //     alert('Input error');
+        function factorial(n) {
+            if (n == 1) return 1;
+            else return n * factorial(n - 1);
+        }
+        let fact = +prompt('Введіть число для обчислення факторіалу');
+        alert(factorial(fact));
 
 
 
